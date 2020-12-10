@@ -12,7 +12,7 @@ import "aos/dist/aos.css"
 export default function Home(props) {
   const [presentPos, setPresentPos] = useState(0)
   useEffect(() => {
-    Aos.init({})
+    Aos.init({ duration: 1000 })
     setInterval(() => {
       setPresentPos(window.pageYOffset)
     }, 200)
