@@ -2,14 +2,17 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
-import {Animated} from "react-animated-css"
+import { Animated } from "react-animated-css"
 import Box from '@material-ui/core/Box'
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm'
 import BusinessIcon from '@material-ui/icons/Business'
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 export default function Home(props) {
   const [presentPos, setPresentPos] = useState(0)
   useEffect(() => {
+    Aos.init({})
     setInterval(() => {
       setPresentPos(window.pageYOffset)
     }, 200)
@@ -35,7 +38,7 @@ export default function Home(props) {
         </Animated>
       </main>
       <div className={styles.front_parallax} >
-        <Box container className={styles.content_row} >
+        <Box data-aos="fade-up" container className={styles.content_row} >
           <Box className={styles.content_col} >
             <div className={styles.paper}>
               <AccessAlarmIcon style={{ fontSize: "10rem" }} />
@@ -50,7 +53,7 @@ export default function Home(props) {
             </div>
           </Box>
         </Box>
-        <Box container className={styles.content_row} >
+        <Box data-aos="fade-up" container className={styles.content_row} >
           <Box className={styles.content_col} >
             <div className={styles.paper}>
               <BusinessIcon style={{ fontSize: "10rem" }} />
@@ -67,7 +70,7 @@ export default function Home(props) {
         </Box>
       </div>
       <footer className={styles.footer}>
-        
+
       </footer>
     </div>
   )
