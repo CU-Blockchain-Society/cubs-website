@@ -25,7 +25,7 @@ export default function Navbar(props) {
                     alignItems="center"
                 >
                     <a href="/" >
-                        <Typography variant="h6">CUBS</Typography>
+                        <img src="cubs_nav.jpg" alt="CUBS" height="35"></img>
                     </a>
                     <div>
                         <Button color="inherit" href="/" >Home</Button>
