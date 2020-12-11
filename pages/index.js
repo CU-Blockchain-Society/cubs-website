@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import styles from '../styles/Home.module.css'
-import { Animated } from "react-animated-css"
-import { Box, Button } from '@material-ui/core'
-import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import Aos from "aos"
 import "aos/dist/aos.css"
+import { Box, Button } from '@material-ui/core'
+import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import FlagIcon from '@material-ui/icons/Flag'
 import TimelineIcon from '@material-ui/icons/Timeline'
+import Banner from '../components/Banner';
 
 export default function Home(props) {
   useEffect(() => {
@@ -14,18 +14,7 @@ export default function Home(props) {
   }, [])
   return (
     <div className={styles.container}>
-      <main className={styles.main}>
-        <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={2000} animationOutDuration={2000} >
-          <h1 className={styles.title}>
-            <span className={styles.CU_title}>CU</span> Blockchain Society
-          </h1>
-        </Animated>
-        <Animated animationIn="fadeInDownBig" animationInDelay={5000} animationInDuration={2000} animationOutDuration={2000} >
-          <p className={styles.description}>
-            A blockchain community in Chulalongkorn University for the interested people
-          </p>
-        </Animated>
-      </main>
+      <Banner />
       <div className={styles.content_zone} >
         <Box data-aos="fade-up" className={styles.content_row} >
           <Box className={styles.content_col} >
@@ -84,6 +73,8 @@ export default function Home(props) {
             <img src="dash_thailand.jpg" alt="Dash Thailand" height="100"></img>
           </div>
         </div>
+        {/* add sponsors here */}
+        {/* <h6 className={styles.subtitle} >Supported by</h6> */}
       </div>
     </div>
   )
