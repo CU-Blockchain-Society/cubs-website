@@ -167,7 +167,7 @@
   flex-direction: column;
   background-color: #ffffff;
   width: 100%;
-  padding: 5rem 2rem 5rem 2rem;
+  padding: 4rem 2rem 4rem 2rem;
   justify-content: center;
 }
 
@@ -177,7 +177,8 @@
   flex-direction: row;
   background-color: #ffffff;
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
   padding: 0 8rem;
   justify-content: center;
   align-items: center;
