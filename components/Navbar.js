@@ -29,7 +29,7 @@ export default function Navbar(props) {
                     </a>
                     <div>
                         <Button color="inherit" href="/" >Home</Button>
-                        <Button color="inherit" href="/" >About us</Button>
+                        <Button color="inherit" href="/about" >About us</Button>
                     </div>
                 </Grid>
                 </Toolbar>
