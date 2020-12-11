@@ -75,7 +75,7 @@ export default function Home(props) {
         </Box>
       </div>
       <div className={styles.sponsors_zone} >
-        <h6 className={styles.subtitle} >Supported by</h6>
+        <h6 className={styles.subtitle} >Our Partners</h6>
         <div className={styles.sponsors_wrap} >
           <div className={styles.sponsor_logo} >
             <img src="cuihub.png" alt="CU innovation hub" width="150" height="150"></img>
