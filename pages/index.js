@@ -1,32 +1,19 @@
-import Head from 'next/head'
 import { useEffect, useState } from 'react';
-import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
 import { Animated } from "react-animated-css"
-import Box from '@material-ui/core/Box'
+import { Box, Button } from '@material-ui/core'
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
-import BusinessIcon from '@material-ui/icons/Business'
 import Aos from "aos"
 import "aos/dist/aos.css"
-import FacebookIcon from '@material-ui/icons/Facebook'
 import FlagIcon from '@material-ui/icons/Flag'
+import TimelineIcon from '@material-ui/icons/Timeline'
 
 export default function Home(props) {
-  const [presentPos, setPresentPos] = useState(0)
   useEffect(() => {
     Aos.init({ duration: 1000 })
-    setInterval(() => {
-      setPresentPos(window.pageYOffset)
-    }, 200)
   }, [])
   return (
     <div className={styles.container}>
-      <Head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-        <title>CU Blockchain Society</title>
-        <link rel="icon" href="/cubs_icon.ico" />
-      </Head>
-      <Navbar />
       <main className={styles.main}>
         <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={2000} animationOutDuration={2000} >
           <h1 className={styles.title}>
@@ -40,7 +27,7 @@ export default function Home(props) {
         </Animated>
       </main>
       <div className={styles.content_zone} >
-        <Box data-aos="fade-up" container className={styles.content_row} >
+        <Box data-aos="fade-up" className={styles.content_row} >
           <Box className={styles.content_col} >
             <div className={styles.paper}>
               <PeopleAltIcon style={{ fontSize: "10rem" }} />
@@ -55,7 +42,7 @@ export default function Home(props) {
             </div>
           </Box>
         </Box>
-        <Box data-aos="fade-up" container className={styles.content_row} >
+        <Box data-aos="fade-up" className={styles.content_row} >
           <Box className={styles.content_col} >
             <div className={styles.paper}>
               <FlagIcon style={{ fontSize: "10rem" }} />
@@ -70,6 +57,22 @@ export default function Home(props) {
             </div>
           </Box>
         </Box>
+        <Box data-aos="fade-up" className={styles.content_row} >
+          <Box className={styles.content_col} >
+            <div className={styles.paper}>
+              <TimelineIcon style={{ fontSize: "10rem" }} />
+            </div>
+          </Box>
+          <Box className={styles.content_col} >
+            <div className={styles.paper}>
+              <h6 className={styles.subtitle} >Roadmap</h6>
+              <p className={styles.content}>
+                Nulla minim dolore consectetur sit sit reprehenderit ex anim Minim aute cillu
+              </p>
+              <Button color="inherit" href="/roadmap" style={{ border: "1px solid white" }} >See our roadmap</Button>
+            </div>
+          </Box>
+        </Box>
       </div>
       <div className={styles.sponsors_zone} >
         <h6 className={styles.subtitle} >Supported by</h6>
@@ -77,13 +80,11 @@ export default function Home(props) {
           <div className={styles.sponsor_logo} >
             <img src="cuihub.png" alt="CU innovation hub" width="150" height="150"></img>
           </div>
+          <div className={styles.sponsor_logo} >
+            <img src="dash_thailand.jpg" alt="Dash Thailand" height="100"></img>
+          </div>
         </div>
       </div>
-      <footer className={styles.footer}>
-        <h6 className={styles.contact_title} >Contact us</h6>
-        <p>contact@cublockchainsociety.com</p>
-        <a href="https://www.facebook.com/cubs2020" alt="cubs" ><FacebookIcon /> CU Blockchain Society</a>
-      </footer>
     </div>
   )
 }
