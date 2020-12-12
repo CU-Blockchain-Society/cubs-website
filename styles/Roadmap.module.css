@@ -1,0 +1,33 @@
+.container {
+    min-height: 100vh;
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    padding: 10rem 0 0 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.content_zone {
+    background-color: #fff;
+    width: 100%;
+    padding: 5rem 2rem 5rem 2rem;
+}
+
+.timeline:before {
+    background: #CD2F76 !important;
+}
