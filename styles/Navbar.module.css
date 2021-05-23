@@ -1,0 +1,8 @@
+.wrap {
+    display: flex;
+}
+
+.home_text {
+    padding-left: 0.25rem;
+    margin: auto 0;
+}
