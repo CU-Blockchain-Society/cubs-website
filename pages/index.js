@@ -55,7 +55,7 @@ export default function Home(props) {
           </Box>
           <Box className={styles.content_col} >
             <div className={styles.paper}>
-              <h6 className={styles.subtitle} >Roadmap</h6>
+              <h6 className={styles.subtitle} >Previous events</h6>
               <p className={styles.content}>
               Our community has grown tremendously in such a short time. You can follow the recent activities here.
               </p>
