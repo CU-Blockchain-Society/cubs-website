@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
         <title>CU Blockchain Society</title>
         <link rel="icon" href="/cubs_icon.ico" />
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <Component {...pageProps} />
       <footer className={styles.footer}>
         <h6 className={styles.contact_title} >Contact us</h6>
