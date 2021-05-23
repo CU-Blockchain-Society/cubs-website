@@ -26,8 +26,9 @@ export default function Home(props) {
             <div className={styles.paper}>
               <h6 className={styles.subtitle} >Who are we?</h6>
               <p className={styles.content}>
-                Nulla minim dolore consectetur sit sit reprehenderit ex anim Minim aute cillu
+                CUBS is the blockchain society driven by Chulalongkorn University students that interested in blockchain technology 
               </p>
+              <Button color="inherit" href="/about" style={{ border: "1px solid white" }} >About us</Button>
             </div>
           </Box>
         </Box>
@@ -41,7 +42,7 @@ export default function Home(props) {
             <div className={styles.paper}>
               <h6 className={styles.subtitle} >Our goal</h6>
               <p className={styles.content}>
-                Nulla minim dolore consectetur sit sit reprehenderit ex anim Minim aute cillu
+                To inform the people about the blockchain technology and also to make a great coorperation with any organizations who would like to create the blockchain activity
               </p>
             </div>
           </Box>
@@ -56,9 +57,9 @@ export default function Home(props) {
             <div className={styles.paper}>
               <h6 className={styles.subtitle} >Roadmap</h6>
               <p className={styles.content}>
-                Nulla minim dolore consectetur sit sit reprehenderit ex anim Minim aute cillu
+              Our community has grown tremendously in such a short time. You can follow the recent activities here.
               </p>
-              <Button color="inherit" href="/roadmap" style={{ border: "1px solid white" }} >See our roadmap</Button>
+              <Button color="inherit" href="/roadmap" style={{ border: "1px solid white" }} >See the roadmap</Button>
             </div>
           </Box>
         </Box>
