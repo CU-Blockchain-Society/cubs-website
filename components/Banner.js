@@ -11,7 +11,7 @@ export default function Banner() {
             </Animated>
             <Animated animationIn="fadeInDownBig" animationInDelay={5000} animationInDuration={2000} animationOutDuration={2000} >
             <p className={styles.description}>
-                A blockchain community in Chulalongkorn University for the interested people
+                A blockchain community in Chulalongkorn University for the future seeker
             </p>
             </Animated>
         </main>
