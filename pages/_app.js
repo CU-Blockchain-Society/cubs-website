@@ -12,12 +12,14 @@ function MyApp({ Component, pageProps }) {
         <title>CU Blockchain Society</title>
         <link rel="icon" href="/cubs_icon.ico" />
       </Head>
-      {/* <Navbar /> */}
+      <Navbar />
       <Component {...pageProps} />
       <footer className={styles.footer}>
-        <h6 className={styles.contact_title} >Contact us</h6>
-        <p>contact@cublockchainsociety.com</p>
-        <a href="https://www.facebook.com/cubs2020" alt="cubs" ><FacebookIcon /> CU Blockchain Society</a>
+        <div className={styles.footer_item}>
+          <h6 className={styles.contact_title} >Contact us</h6>
+          <p>contact@cublockchainsociety.com</p>
+          <a href="https://www.facebook.com/cubs2020" alt="cubs" ><FacebookIcon /> CU Blockchain Society</a>
+        </div>
       </footer>
     </div>
   )
